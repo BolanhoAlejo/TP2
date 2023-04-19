@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Proceso de cadenas</title>
+    </head>
+    <body>
+        <h1>Proceso de cadenas</h1>
+        <form th:action="@{/procesoString}" method="post" th:object="${procesoString}">
+            <label for="cadena">Ingrese una cadena:</label>
+            <input type="text" th:field="*{cadena}" name="cadena"/><br/>
+            <input type="submit" value="Procesar" />
+        </form>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Persona</title>
+</head>
+<body>
+    <h1>Formulario Persona</h1>
+    <form th:action="@{/persona}" method="post" th:object="${persona}">
+        <label for="nombre">Nombre:</label>
+        <input type="text" th:field="*{nombre}" name="nombre"><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" th:field="*{apellido}" name="apellido"><br>
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" th:field="*{fechaNacimiento}" name="fechaNacimiento"><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
